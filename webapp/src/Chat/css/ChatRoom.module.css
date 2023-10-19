@@ -1,0 +1,55 @@
+.ChatRoomRoot {
+  padding-top: 8%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-sizing: default;
+  height: 100%;
+  justify-content: flex-end;
+}
+.ChatRoomBar {
+  height: 3em;
+  background-color: whitesmoke;
+}
+
+.ChatRoomRootHistory {
+  box-shadow: inset 0 2rem 2rem -2rem rgba(black, 0.05),
+    inset 0 -2rem 2rem -2rem rgba(black, 0.05);
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  /* max-height: 50%; */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  /* max-width: 370.9px; */
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 4;
+}
+.ChatBar {
+  color: #26a9e1;
+  background-color: transparent;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  position: absolute;
+  padding-left: 10px;
+  top: 0;
+  right: 0;
+  height: 4%;
+  width: 100%;
+}
+.ChatRoomRootHistory::-webkit-scrollbar {
+  width: 3px; /* 스크롤 바의 너비 */
+  display: none;
+}
+
+.ChatRoomRootHistory::-webkit-scrollbar-thumb {
+  background-color: darkgrey; /* 스크롤 바의 색상 */
+  border-radius: 2px; /* 스크롤 바의 모서리 둥글기 */
+}
+
+.ChatRoomRootInput {
+  padding-bottom: 5px;
+}

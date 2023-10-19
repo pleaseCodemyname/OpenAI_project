@@ -1,0 +1,227 @@
+.calendarNavigation {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  bottom: 30px;
+}
+
+.calendarWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  margin: 5px;
+  right: 5px;
+}
+
+.calendarContainer {
+  color: #9d9d9d;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.calendarDay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* flex: 1; */
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.calendarDay:hover {
+  cursor: pointer;
+}
+
+.calendarDayName {
+  /* font-weight: 800; */
+  margin-bottom: 5px;
+  padding: 3px;
+  font-size: 15px;
+}
+
+.calendarDay:nth-child(1) .calendarDayName {
+  color: #ff5500;
+}
+
+.calendarDay:nth-child(7) .calendarDayName {
+  color: #00b6ff;
+}
+
+.calendarDayNumber {
+  text-align: center;
+  display: flex;
+  width: 30px;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
+  /* font-weight: 600; */
+}
+
+.calendarDayNumber.today {
+  background-color: #ebd7ff;
+  width: 30px;
+  color: black;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  /* font-weight: 600; */
+  text-align: center;
+  /* box-shadow: 0 0 0 5px #ebd7ff; */
+}
+.calendarDay:hover .calendarDayNumber {
+  font-weight: 600;
+}
+.selectorItem {
+  font-family: "Gowun Dodum", sans-serif;
+}
+.dateSelector {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 18px;
+  margin-left: 43px;
+  margin-bottom: 2px;
+}
+
+.calendarleftbutton {
+  margin-right: 5px;
+  background: none;
+
+  border: none;
+  font-size: 20px;
+  fill: #9d9d9d;
+  color: #9d9d9d;
+  /* font-weight: 700; */
+  cursor: pointer;
+  outline: none;
+}
+
+.calendarrightbutton {
+  background: none;
+  border: none;
+  transform: scaleX(-1);
+  font-size: 20px;
+  fill: #9d9d9d;
+  color: #9d9d9d;
+  cursor: pointer;
+  outline: none;
+  margin-left: 5px;
+}
+
+.modal {
+  position: absolute;
+
+  background-color: #ffffff;
+  padding: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1;
+  top: 40px;
+  border-radius: 10px;
+  & div {
+    font-family: "Gowun Dodum", sans-serif;
+  }
+}
+
+.modal div {
+  text-align: center;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #ffffff;
+  transition: background-color 0.3s;
+  font-size: 16px;
+}
+
+.modal div:hover {
+  background-color: #a9e7ff;
+}
+
+.calendarNavigation {
+  width: 100%;
+  display: flex;
+  /* justify-content: flex-start; */
+  align-items: center;
+  gap: 7px;
+}
+
+.calendarContainer {
+  display: flex;
+  gap: 10px;
+}
+
+.calendarIcon {
+  cursor: pointer;
+}
+
+.selectedDay {
+  border: 0.5px solid #ebd7ff;
+  width: 30px;
+  color: black;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  text-align: center;
+  /* box-shadow: 0 0 0 5px #ebd7ff; */
+}
+
+.addIcon {
+  font-size: 34px;
+  font-family: "Gowun Dodum", sans-serif;
+  cursor: pointer;
+  color: #9d9d9d;
+  float: right;
+  margin-right: 16px;
+  position: relative;
+  left: 320px;
+  bottom: 47px;
+}
+
+.addModal {
+  position: absolute;
+  right: 10px;
+  padding: 10px;
+  margin: 2px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-height: 200px;
+  z-index: 1;
+  font-size: 13px;
+  border-radius: 5px;
+}
+
+.addModal > button {
+  font-family: "Gowun Dodum", sans-serif;
+  padding: 5px;
+  font-size: 18px;
+  color: #9d9d9d;
+  background: none;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+}
+
+.addModal > button:hover {
+  background-color: #efe0ff;
+  padding: 5px;
+  border-radius: 3px;
+  transition: background-color 0.3s;
+}

@@ -1,0 +1,7 @@
+ol > li {
+  list-style-position: inside;
+}
+
+ul > li {
+  list-style-position: inside;
+}

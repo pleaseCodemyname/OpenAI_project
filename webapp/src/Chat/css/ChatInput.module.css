@@ -1,0 +1,40 @@
+.ChatInputRoot {
+  display: flex;
+  flex-direction: column;
+  margin: 0, 0;
+}
+
+.ChatInputTypingIndicator {
+  max-height: 28px;
+}
+
+.ChatInputContent {
+  gap: 10px;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  width: 100%;
+  position: relative;
+}
+
+.ChatInputInput {
+  width: 100%;
+}
+
+.ChatInputTextarea {
+  max-height: 90px;
+  border-bottom: #dce9ff;
+}
+
+.ChatInputSendButton {
+  font-family: "Gowun Dodum", sans-serif;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  width: 0.8em;
+  height: 0.8em;
+  position: absolute;
+  right: 18px;
+  bottom: 18px;
+  z-index: 1000;
+}
